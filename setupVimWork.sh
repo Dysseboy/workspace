@@ -7,9 +7,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 scp ./vimrc ~/.vim/vimrc
 
 #Install plugs
-vim -c 'PlugInstall' --sync +qa
+vim -c 'PlugInstall' +qa
 
 cd ~/.vim/plugged/YouCompleteMe
-python install.py --all --verbose 
+python3 install.py --all --verbose 
 
 echo "Vim is done"
