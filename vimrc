@@ -143,7 +143,8 @@ augroup END
 " More Vimscripts code goes here.
 autocmd vimenter * ++nested colorscheme gruvbox
  
-
+" Start NERDTree and put the cursor back in the other window
+autocmd VimEnter * NERDTree | wincmd p
 
 " }}}
 
